@@ -5,8 +5,8 @@
 #Start application
 
 
-FROM public.ecr.aws/ubuntu/ubuntu:24.10_stable 
-WORKDIR /app
+FROM public.ecr.aws/ubuntu/ubuntu:24.10_stablel
+WORKDIR /app 
 COPY . .
 RUN apt-get update
 RUN apt-get install -y python3-pip python3.12-venv
